@@ -1,0 +1,53 @@
+.text ul li{
+text-align: left;
+}
+
+.list{
+	display: flex;
+	justify-content: center;
+}
+
+.text ul{
+	list-style-type: disc;
+}
+
+.list{
+align-items: center;
+}
+
+.text h2{
+	color: #7d725f;
+}
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+input[type=submit] {
+	
+    width: 30%;
+    background-color: #7d725f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+ {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+

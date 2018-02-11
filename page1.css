@@ -1,0 +1,114 @@
+body{
+	margin:0px;
+	background-image: url("old_moon.png");
+	background-repeat: repeat;
+
+}
+
+header{
+	width: 100%;
+	position: fixed;
+	background-color: #242323;
+	z-index: 100;
+}
+h1 {
+	margin-top: 0;
+	padding-top: 20px;
+}
+main{
+	padding: 40px 0;
+	text-align: center;
+	
+}
+a{
+	text-decoration: none;
+}
+.menu{
+	display: inline;
+}
+.menu li{	
+	display: inline-block;
+	padding: 20px 20px;
+	margin:0 5px;
+}
+.menu li a{	
+	color:white;
+	font-size: 16px;
+}
+.drop_downMenu{
+	background-color: #242323;
+	display: none;
+	position: absolute;
+	top:60px;
+	left:100px;
+	transition: 2s;
+}
+.drop_downMenu li{
+	display: block;
+}
+.drop_downMenu li a{
+	color:white;
+}
+.frDrop:hover ul{
+	display: block;
+}
+ .main h1{
+
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes animation{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+
+
+.colddrinks{
+	margin-top: -120px;
+}
+.tea{
+	margin-top: -540px;
+}
+
+
+img.animation{
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	left: -10%;
+    top: 20%;
+    animation-name:animation; 
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+.desserts{
+	margin-top: -520px;
+}
+
+.menu-item{
+	margin-top: 80px;
+	position: relative;
+}
+.menu-item h3{
+	color: #7d725f;
+}
+.menu-item hr{
+    text-align: center;
+    width: 20%;
+    size: 1.5;
+    color: red;
+    background-color: black;
+}
+
+
+.menu-item img{
+}
+@media only screen and (max-width: 968px) {
+  body {
+  	font-size: 12px;
+  } 
+ }
