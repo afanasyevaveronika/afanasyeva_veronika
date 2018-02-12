@@ -113,6 +113,7 @@ a{
 	width:300px;
 	height:300px;
     padding: 10px;
+    bo
 }
  .gallery1{
  	display: inline-flex;
@@ -226,19 +227,58 @@ font-weight: 300;
   
 
 }
-table {
+.table1 {
     border-collapse: separate;
     width: 50%;
     border: 1px solid black;
+    border-radius: 10px;
 } 
-
-td {
+.table2 {
+	border-collapse: separate;
+    width: 50%;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
-table.ex1 {
-    table-layout: auto;
+.table1 td {
+    border: 1px solid black;
+    border-radius: 10px;
 }
+.table2  td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.contacts ul li{
+    text-align: left;
+}
+.contacts h2{
+    color: #7d725f;
+}
+.addresses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts1 ul li{
+    text-align: left;
+}
+.contacts1 h2{
+    color: #7d725f;
+}
+.addresses1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+	color: #7d725f;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
 
 
 

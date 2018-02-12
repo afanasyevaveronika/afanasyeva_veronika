@@ -1,3 +1,6 @@
+@background-color:#242323;
+@background-color1:#a8a8a8;
+@contacts-color:#7d725f;
 body{
 	margin:0px;
 	background-image: url("old_moon.png");
@@ -7,7 +10,7 @@ body{
 header{
 	width: 100%;
 	position: fixed;
-	background-color: #242323;
+	background-color: @background-color;
 }
 h1 {
 	margin-top: 0;
@@ -34,7 +37,7 @@ a{
 	font-size: 16px;
 }
 .drop_downMenu{
-	background-color: #242323;
+	background-color: @background-color;
 	display: none;
 	position: absolute;
 	top:60px;
@@ -53,7 +56,7 @@ a{
 
 .answers{
 	margin-top: 50px;
-	background: #a8a8a8;
+	background: @background-color1;
 }
 .photocoffee{
 	float: left;
@@ -83,7 +86,7 @@ a{
 	margin-left: 10px;
 }
 .place{
-	background:#a8a8a8; 
+	background:@background-color1; 
 
 }
 .place h2{
@@ -95,9 +98,7 @@ a{
      font-size: 20px;
 }
 .text2{
-	margin-left: 10%; 
-     margin-right: 10%;
-     font-size: 20px;
+	.text1;
 } 
 .gal1 img{
 	width: 300px ;
@@ -115,8 +116,7 @@ a{
     padding: 10px;
 }
  .gallery1{
- 	display: inline-flex;
- 	justify-content: center;
+ 	.gallery;
     
  } 
  .gal4 img{
@@ -155,12 +155,11 @@ a{
     padding: 10px;
 }
  .gallery2{
- 	display: inline-flex;
- 	justify-content: center;
+ 	.gallery;
     
  } 
 .choosecity{
-	background:#a8a8a8;
+	background:@background-color1;
 	}
 
 	blockquote {
@@ -205,7 +204,7 @@ font-weight: 300;
   height: 100px;
   background: #BDE2E0;
   border-radius: 50%;
-  border: 15px solid #a8a8a8;
+  border: 15px solid @background-color1;
   box-shadow: inset 0 0 15px rgba(0,0,0,.5);
   color: white;
   text-align: center;
@@ -213,9 +212,8 @@ font-weight: 300;
   font-size: 20px;
   line-height: 100px;
   overflow: hidden;
-
-
 }
+
 @keyframes load {
   100% {
     transform: translateY(-1100px);
@@ -223,24 +221,57 @@ font-weight: 300;
 }
 .loader {
   animation: load 11s steps(11, end) infinite;
-  
-
-}
-table {
+ }
+.table1 {
     border-collapse: separate;
     width: 50%;
     border: 1px solid black;
+    .bradius(10px);
 } 
-
-td {
+.table2 {
+	border-collapse: separate;
+    width: 50%;
     border: 1px solid black;
+    .bradius(10px);
 }
 
-table.ex1 {
-    table-layout: auto;
+.table1 td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.table2  td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.contacts ul li{
+    text-align: left;
+}
+.contacts h2{
+    color: @contacts-color;
+}
+.addresses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.contacts1 ul li{
+    text-align: left;
+}
+.contacts1 h2{
+    color: @contacts-color;
+}
+.addresses1 {
+    .addresses;
+}
 
-
- 
+.bradius(@rad){
+  -webkit-border-radius: @rad;
+  border-radius: @rad;
+}
+footer p{
+	color: #7d725f;
+	font-weight: bold;
+	font-size: 20px;
+}
 
